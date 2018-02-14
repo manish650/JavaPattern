@@ -10,22 +10,24 @@
 
 package com.pattern.first;
 
+import java.util.Arrays;
+
 public class Pattern1 {
 	public static void main(String[] args) {
 		int n = 7;
 		int k = 1;
+		
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= n; j++) {
 
-				if(k==7)
-					System.out.println("i\t"+i);
+				if (k == 7)
+					System.out.println("i\t" + i);
 				if (i % 2 == 0) {
 					System.out.print(" " + k--);
 					if (j == 1)
 						k = k + n - 1;
 					if (j == n)
 						k = k + n;
-					
 
 				} else {
 
